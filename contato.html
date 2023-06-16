@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Universo Discos | Contato</title>
+
+    <style>
+      form {
+        width: 50%;
+        float: left;
+      }
+
+      form label {
+        display: block;
+      }
+
+      form input,
+      textarea {
+        margin-bottom: 20px;
+        border: 3px solid #002286;
+        background-color: #fff;
+        padding: 5px;
+        transition: all 0.5s;
+        width: 100%;
+        font-size: 16px;
+        font-family: inherit;
+      }
+
+      form input:focus,
+      textarea:focus {
+        outline: none;
+        box-shadow: 5px 5px 10px 0px rgba(0, 34, 134, 0.5);
+      }
+
+      form button {
+        background-color: #002286;
+        border: 0;
+        color: #fff;
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 20px;
+        border-radius: 8px;
+      }
+      .texto {
+        width: 40%;
+        float: right;
+        background-color: #002286;
+        color: #fff;
+        padding: 50px;
+      }
+      .texto a {
+        color: #fff;
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+      .texto p {
+        margin: 0;
+      }
+      .texto h2 {
+        margin-top: 0;
+      }
+      .redes {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+      }
+      img {
+        width: 25px;
+        filter: brightness(0) invert(1);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <h1 id="titulo">Universo Discos</h1>
+      <div>
+        <a href="index.html">Home</a> |
+        <a href="historia.html">História da Música</a> |
+        <a href="contato.html">Contato</a> | 
+        <a href="lojafisica.html">Loja Física</a> |
+        <a href="albuns.html">Álbuns</a>
+      </div>
+    </div>
+    <div class="conteudo">
+      <h2>Entre em contato com a nossa equipe!</h2>
+      <div class="infos">
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" />
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" />
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" name="telefone" id="telefone" />
+
+          <label for="telefone">Assunto:</label>
+          <input type="tel" name="assunto" id="assunto" />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem" rows="10"></textarea>
+          <button>Enviar</button>
+        </form>
+        <div class="texto">
+          <h2>Contato:</h2>
+          <p>
+            <a href="tel:+5519984094906">(019) 98409-4906</a><br />
+            <a href="tel:+5519992376262">(019) 99237-6262</a><br />
+            <a href="mailto:contato@universodiscos.com"
+              >contato@universodiscos.com</a
+            >
+          </p>
+          <p class="redes">
+            <a href="">
+                <img src="./images/whatsapp.svg" alt="" />
+            </a>
+            <a>
+                <img src="./images/instagram.svg" alt="" />
+            </a>
+            <a href="">    
+                <img src="./images/facebook.svg" alt="" />
+            </a>
+            <a href="">
+                <img src="./images/spotify.svg" alt="" />
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
