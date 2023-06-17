@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Universo Discos | Contato</title>
+    <link rel="icon" type="image/png" href="images/nosso_disco.png">
 
     <style>
       form {
@@ -71,6 +72,23 @@
         width: 25px;
         filter: brightness(0) invert(1);
       }
+      .imagem-disco {
+        float: right;
+        padding: 50px;
+        animation: rodar 5s infinite linear;
+      }
+      .imagem-disco img  {
+        width: 250px;
+        filter: none;
+      }
+      @keyframes rodar {
+        from {
+          rotate: 0;
+        }
+        to {
+          rotate: 360deg;
+        }        
+      }
     </style>
   </head>
   <body>
@@ -127,7 +145,11 @@
                 <img src="./images/spotify.svg" alt="" />
             </a>
           </p>
+          
         </div>
+        <div class="imagem-disco">
+            <img src="images/nosso_disco.png">
+          </div>
       </div>
     </div>
   </body>
